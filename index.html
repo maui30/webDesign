@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-[Poppins]">
+    <header class="bg-white text-sm sticky top-0 z-50">
+        <nav class="flex items-center justify-between w-[92%] mx-auto p-2">
+            <div class="flex justify-center items-center gap-2">
+                <img class="w-12" src="./assets/logo.png" alt="">
+                <p class="font-bold uppercase">Furfecto</p>
+            </div>
+            <div class="nav-links md:static absolute bg-white md:min-h-fit min-h-[70vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6">
+                    <li>
+                        <a class="hover:text-gray-500" href="">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="">Animals</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="">About Us</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="">Programs</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="">Guidelines</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="">Join Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <button class="font-bold">Sign Up</button>
+                <ion-icon onclick="toggleMenu(this)"name="menu-outline" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <div class="md:flex items-center max-w-2xl mx-auto justify-center text-center h-full p-8 ">
+        <div class="max-w-2xl items-center justify-center text-center">
+            <h1 class="font-bold text-3xl">Every Pet Deserves a Loving Home.</h1>
+            <h1 class="font-bold text-3xl mb-6"><b class="text-blue-500">Adopt</b> a Pet Today</h1>
+            <p class="text-sm text-gray-500">Browse our available animals and learn more about the adoption process. Together, we can <b>rescue, rehabilitate, and rehome</b> pets in need. Thank you for supporting our mission to bring joy to families through pet adoption.</p>
+        </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto justify-center items-center">
+        <h1 class="font-bold text-3xl text-center p-8">Meet Our Dogs</h1>
+        <div class="grid gap-6 grid-cols-1 sm:grid-cols-3 justify-items-center p-3">
+            <div >
+                <div class="w-48 h-48">
+                    <img class="w-full h-full object-cover" src="./assets/dog1.jpg" alt="">
+                </div>
+                
+                <p><b>Bearbrand</b></p>
+                <p>5</p>
+            </div>
+           <div >
+                <div class="w-48 h-48">
+                    <img class="w-full h-full object-cover" src="./assets/dog1.jpg" alt="">
+                </div>
+                
+                <p><b>Bearbrand</b></p>
+                <p>5</p>
+            </div>
+            <div >
+                <div class="w-48 h-48">
+                    <img class="w-full h-full object-cover" src="./assets/dog1.jpg" alt="">
+                </div>
+                
+                <p><b>Bearbrand</b></p>
+                <p>5</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto justify-center items-center">
+        <h1 class="font-bold text-3xl text-center p-8">Meet Our Cats</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-3 justify-items-center p-3">
+            <div >
+                <div class="w-48 h-48">
+                    <img class="w-full h-full object-cover" src="./assets/dog1.jpg" alt="">
+                </div>
+                
+                <p><b>Bearbrand</b></p>
+                <p>5</p>
+            </div>
+           <div >
+                <div class="w-48 h-48">
+                    <img class="w-full h-full object-cover" src="./assets/dog1.jpg" alt="">
+                </div>
+                
+                <p><b>Bearbrand</b></p>
+                <p>5</p>
+            </div>
+            <div >
+                <div class="w-48 h-48">
+                    <img class="w-full h-full object-cover" src="./assets/dog1.jpg" alt="">
+                </div>
+                
+                <p><b>Bearbrand</b></p>
+                <p>5</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-8">
+        <h1 class="text-center text-blue-500 font-bold text-3xl pt-5">Adoption Stories</h1>
+        <p class="text-center text-gray-500 p-1">Glimpse the experience of the adoption of others</p>
+        <div class="flex gap-5 flex-wrap md:flex-nowrap justify-center items-center p-8 bg-blue-30">
+            <div class="bg-white w-96 md:w-2/5 rounded-xl shadow-lg p-12 flex flex-col items-center drop-shadow-xl">
+                <svg class="w-16 h-auto" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M159.999 128.056a76.55 76.55 0 0 1-4.915 27.024 76.745 76.745 0 0 1-27.032 4.923h-.108c-9.508-.012-18.618-1.75-27.024-4.919A76.557 76.557 0 0 1 96 128.056v-.112a76.598 76.598 0 0 1 4.91-27.02A76.492 76.492 0 0 1 127.945 96h.108a76.475 76.475 0 0 1 27.032 4.923 76.51 76.51 0 0 1 4.915 27.02v.112zm94.223-21.389h-74.716l52.829-52.833a128.518 128.518 0 0 0-13.828-16.349v-.004a129 129 0 0 0-16.345-13.816l-52.833 52.833V1.782A128.606 128.606 0 0 0 128.064 0h-.132c-7.248.004-14.347.62-21.265 1.782v74.716L53.834 23.665A127.82 127.82 0 0 0 37.497 37.49l-.028.02A128.803 128.803 0 0 0 23.66 53.834l52.837 52.833H1.782S0 120.7 0 127.956v.088c0 7.256.615 14.367 1.782 21.289h74.716l-52.837 52.833a128.91 128.91 0 0 0 30.173 30.173l52.833-52.837v74.72a129.3 129.3 0 0 0 21.24 1.778h.181a129.15 129.15 0 0 0 21.24-1.778v-74.72l52.838 52.837a128.994 128.994 0 0 0 16.341-13.82l.012-.012a129.245 129.245 0 0 0 13.816-16.341l-52.837-52.833h74.724c1.163-6.91 1.77-14 1.778-21.24v-.186c-.008-7.24-.615-14.33-1.778-21.24z" fill="#FF4A00"></path></svg>
+                <h2 class="text-lg font-bold p-1 text-center">Fateful Encounter</h2>
+                <h3 class="text-sm text-blue-400 font-bold">Emily Santos</h3>
+                <p class="text-justify text-xs pt-2">Mesmerized by the playful chorus of barks and meows, my eyes were drawn to a captivating tabby kitten, adorned with emerald-green eyes. Cradling the tiny furball, whom I named Oliver, an undeniable connection formed. In that moment, I knew I had found my feline companion, and without hesitation, I embarked on the adoption process. Little did I know that this fateful encounter would bring immeasurable love, lessons in compassion, and an unwavering bond that would forever shape my life.</p>
+            </div>
+            <div class="bg-white w-96 md:w-2/5 rounded-xl shadow-lg p-12 flex flex-col items-center drop-shadow-xl">
+                <svg class="w-16 h-auto" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M159.999 128.056a76.55 76.55 0 0 1-4.915 27.024 76.745 76.745 0 0 1-27.032 4.923h-.108c-9.508-.012-18.618-1.75-27.024-4.919A76.557 76.557 0 0 1 96 128.056v-.112a76.598 76.598 0 0 1 4.91-27.02A76.492 76.492 0 0 1 127.945 96h.108a76.475 76.475 0 0 1 27.032 4.923 76.51 76.51 0 0 1 4.915 27.02v.112zm94.223-21.389h-74.716l52.829-52.833a128.518 128.518 0 0 0-13.828-16.349v-.004a129 129 0 0 0-16.345-13.816l-52.833 52.833V1.782A128.606 128.606 0 0 0 128.064 0h-.132c-7.248.004-14.347.62-21.265 1.782v74.716L53.834 23.665A127.82 127.82 0 0 0 37.497 37.49l-.028.02A128.803 128.803 0 0 0 23.66 53.834l52.837 52.833H1.782S0 120.7 0 127.956v.088c0 7.256.615 14.367 1.782 21.289h74.716l-52.837 52.833a128.91 128.91 0 0 0 30.173 30.173l52.833-52.837v74.72a129.3 129.3 0 0 0 21.24 1.778h.181a129.15 129.15 0 0 0 21.24-1.778v-74.72l52.838 52.837a128.994 128.994 0 0 0 16.341-13.82l.012-.012a129.245 129.245 0 0 0 13.816-16.341l-52.837-52.833h74.724c1.163-6.91 1.77-14 1.778-21.24v-.186c-.008-7.24-.615-14.33-1.778-21.24z" fill="#FF4A00"></path></svg>
+                <h2 class="text-lg font-bold p-1 text-center">Fateful Encounter</h2>
+                <h3 class="text-sm text-blue-400 font-bold">Emily Santos</h3>
+                <p class="text-justify text-xs pt-2">Mesmerized by the playful chorus of barks and meows, my eyes were drawn to a captivating tabby kitten, adorned with emerald-green eyes. Cradling the tiny furball, whom I named Oliver, an undeniable connection formed. In that moment, I knew I had found my feline companion, and without hesitation, I embarked on the adoption process. Little did I know that this fateful encounter would bring immeasurable love, lessons in compassion, and an unwavering bond that would forever shape my life.</p>
+            </div>
+        </div>
+        <div class="flex justify-center items-center">
+            <button type="button" class="font-bold text-white hover:bg-gray-800 bg-slate-950 rounded-full text-sm px-5 py-2.5 mr-2 mb-2 ">
+                Share Your Stories
+            </button>
+        </div>
+    </div>
+
+    <div class="justify-center items-center p-2">
+        <h1 class="font-bold text-3xl text-center p-8">Aritcles</h1>
+        <div class="flex flex-wrap md:flex-nowrap gap-6 justify-center">
+            <div class="w-60 border-solid border-2 text-justify p-5 bg-white rounded-md drop-shadow-xl">
+                <div>
+                    <img class="w-30 h-30" src="./assets/dog1.jpg" alt="">
+                </div>
+                <p><b>Family reunited with stolen dog at ACC adoption eventle</b></p>
+                <div class="flex text-xs gap-3 text-gray-400 pt-5">
+                    <p>June 3,2022</p>
+                    <p>WABC-NY</p>
+                </div>
+            </div>
+            <div class="w-60 border-solid border-2 text-justify p-5 bg-white rounded-md drop-shadow-xl">
+                <div>
+                    <img class="w-30 h-30" src="./assets/dog1.jpg" alt="">
+                </div>
+                <p><b>Family reunited with stolen dog at ACC adoption eventle</b></p>
+                <div class="flex text-xs gap-3 text-gray-400 pt-5">
+                    <p>June 3,2022</p>
+                    <p>WABC-NY</p>
+                </div>
+            </div>
+            <div class="w-60 border-solid border-2 text-justify p-5 bg-white rounded-md drop-shadow-xl">
+                <div>
+                    <img class="w-30 h-30" src="./assets/dog1.jpg" alt="">
+                </div>
+                <p><b>Family reunited with stolen dog at ACC adoption eventle</b></p>
+                <div class="flex text-xs gap-3 text-gray-400 pt-5">
+                    <p>June 3,2022</p>
+                    <p>WABC-NY</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="flex items-center p-16 justify-center">
+        <div class="flex max-w-4xl drop-shadow-xl">
+            <div class="bg-white">
+                <img class="hidden md:block w-full h-96 object-right" src="./assets/newsletter.jpg" alt="">
+            </div>
+            <div class="bg-white p-8 flex flex-col justify-center rounded">
+                <h1 class="font-bold text-5xl pb-2">SUBSCRIBE TO US!</h1>
+                <p class="pb-4">To stay update on our latest products, news and trends. Don’t worry, we won’t spam you!</p>
+                <input type="email" placeholder="enter your email here" class="border-solid border-b-2 border-stone-950">
+                <div class="pt-4 flex justify-center items-center">
+                    <button type="button" class="font-bold text-white hover:bg-gray-800 bg-slate-950 rounded-full text-sm px-5 py-2.5 mr-2 mb-2 ">
+                        Share Your Stories
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="bg-neutral-900 pr-24 pl-24 pt-12 pb-12 grid grid-cols-1 md:grid-cols-3 gap-16 text-center md:text-justify text-2xl md:text-lg md:gap-6 justify-items-center text-white">
+        <div class="flex gap-3">
+            <div>
+                <img src="./assets/logowhite.png" alt="" class="w-32 hidden md:block">
+            </div>
+            <div>
+                <h3 class="font-semibold">Reach Us</h3>
+                <div>
+                    <ul class="">
+                        <li class="flex items-center space-x-2"><ion-icon name="call"></ion-icon><span>0909 836 6911</span></li>
+                        <li class="flex items-center space-x-2"><ion-icon name="mail"></ion-icon><span>email@gmail.com</span></li>
+                        <li class="flex items-center space-x-2"><ion-icon name="location"></ion-icon><span>location</span></li>
+                    </ul>
+                </div>   
+            </div>
+        </div>
+        
+
+        <div>
+            <h3 class="font-semibold">Furfecto</h3>
+            <div>
+                <ul>
+                    <li>About</li>
+                    <li>Animal</li>
+                    <li>Join Us</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="font-semibold">Quick Links</h3>
+            <div>
+                <ul>
+                    <li>About</li>
+                    <li>Animal</li>
+                    <li>Join Us</li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+    
+</body>
+<script src="./script.js"></script>
+
+</html>
