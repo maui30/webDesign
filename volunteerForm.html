@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-[Poppins]">
+    <div>
+        <h1 class="text-center font-bold text-3xl pt-10 pb-6">Fill Up Volunteer Form</h1>
+        <div class="flex justify-center p-4">
+            <div class="bg-white p-16 w-11/12 md:w-9/12 rounded-xl drop-shadow-xl border border-solid border-gray-200">
+                <div>
+                    <h2 class="border-solid border-b-2 border-slate-950 font-bold text-2xl">Applicant's Info</h2>
+
+                    <p class="py-4">Name<b class="text-red-500">*</b></p>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-y-2 lg:gap-x-12">
+                        <div>
+                            <input type="text" placeholder="First Name" class="w-full border-solid border-b-2 border-slate-400">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Last Name" class="w-full border-solid border-b-2 border-slate-400">
+                        </div>
+
+                        <div>
+                            <p class="pb-4 pt-8">Phone<b class="text-red-500">*</b></p>
+                            <input type="text" placeholder="First Name" class="w-full border-solid border-b-2 border-slate-400">
+                        </div>
+                        <div>
+                            <p class="pb-4 lg:pt-8">Email<b class="text-red-500">*</b></p>
+                            <input type="text" placeholder="Last Name" class="w-full border-solid border-b-2 border-slate-400">
+                        </div>
+
+                        <div class="col-span-1 lg:col-span-2 flex justify-center items-center">
+                            <label for="volunteer" class="p-8">Type of Volunteer Work?<b class="text-red-500">*</b></p>
+                            <select name="volunteer" id="volunteer" class="w-full border border-slate-400 rounded-lg">
+                                <option value="volvo">Animal Care</option>
+                                <option value="saab">Office/Admin work</option>
+                                <option value="mercedes">Clinic</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex justify-center items-center">
+                        <button type="button" class="font-bold text-white hover:bg-gray-800 bg-slate-950 rounded-full text-sm px-5 py-2.5 mr-2 mb-2 ">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
